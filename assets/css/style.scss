@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+a {
+  color: #3300ff;
+}
+
 .markdown-body {
   max-width: 800px;
   font-size: 16px;
@@ -20,6 +24,20 @@
 
 input.task-list-item-checkbox {
   margin-right: 4px;
+}
+
+img[src*="demo"] {
+  border: 1px #eee solid;
+  -webkit-box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
+  box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
+}
+
+@media only screen and (min-width: 900px) {
+  img[src*="demo"] {
+    max-width: 120%;
+    margin-left: -10%;
+  }
 }
 
 h1,
