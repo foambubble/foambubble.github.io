@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+<title>{{ page.title }}</title>
+{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+{% endif %}
+{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+<link rel="icon" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="57x57" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/assets/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i|Noto+Sans:400,400i,700,700i|Source+Code+Pro&amp;subset=latin-ext">
+<link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}/doks-theme/assets/css/style.css">

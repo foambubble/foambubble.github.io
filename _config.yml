@@ -1,1 +1,28 @@
-title: "Foam"
+# Theme settings
+doks:
+    baseurl:
+    color_theme: # Available themes: blue (default), green, purple, red and yellow
+    header:
+        logo:
+            text: Foam
+            image:
+    footer:
+        content:
+            logo:
+                text:
+                image:
+            copyright: Built for your 🧠 with 💜
+        social_list:
+            - network_name: github
+              profile_url: 'https://github.com/foambubble/foam'
+
+# SASS settings
+sass:
+    sass_dir: ./doks-theme/_sass
+    style: :compressed
+
+# Jekyll settings
+layouts_dir: ./doks-theme/_layouts
+includes_dir: ./doks-theme/_includes
+exclude: [ 'README.md', 'CHANGELOG.md' ]
+permalink: /:title/

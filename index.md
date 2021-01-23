@@ -1,74 +1,34 @@
 ---
+# Page settings
+layout: homepage
+keywords:
+
+# Hero section
+title: Foam
+description: Developing tools for thought.
+# Grid navigation
+grid_navigation:
+    - title: Getting started
+      excerpt: It's easy to start writing with Foam.
+      cta: Let's do it
+      url: 'https://foambubble.github.io/foam'
+    - title: See Foam on GitHub
+      excerpt: Foam is an open source project.
+      cta: Go to the repo
+      url: 'https://github.com/foambubble/foam'
 ---
 
-// @import "{{ site.theme }}";
+<!-- Foam is a personal knowledge management and sharing system built on Visual Studio Code and GitHub. -->
 
-a {
-  color: #3300ff;
-}
-
-.markdown-body {
-  max-width: 800px;
-  font-size: 16px;
-}
-
-.markdown-body p {
-  font-size: 16px;
-  line-height: 1.9em;
-  margin-bottom: 1.2em;
-}
-
-.markdown-body li {
-  line-height: 1.9em;
-}
-
-input.task-list-item-checkbox {
-  margin-right: 4px;
-}
-
-img[src*="demo"] {
-  border: 1px #eee solid;
-  -webkit-box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
-  -moz-box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
-  box-shadow: 4px 4px 16px 0px rgba(50, 50, 50, 0.1);
-}
-
-@media only screen and (min-width: 900px) {
-  img[src*="demo"] {
-    max-width: 120%;
-    margin-left: -10%;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-blockquote {
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
-    "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-
-/**
-  Pure CSS Animated Bubbles by Mark Bowley
-  https://codepen.io/Mark_Bowley/pen/mEtqj
-*/
-body {
-  background: #ffff;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-#bubble-wrap {
+<style>
+  #bubble-wrap {
   bottom: 0;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* KEYFRAMES */
@@ -309,7 +269,7 @@ body {
 }
 
 .bubble:after {
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
 
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -325,3 +285,18 @@ body {
   position: absolute;
   width: 180px;
 }
+
+</style>
+
+<div id="bubble-wrap">
+    <div class="bubble x1"></div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x9"></div>
+    <div class="bubble x10"></div>
+</div>
