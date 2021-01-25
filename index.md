@@ -12,10 +12,6 @@ grid_navigation:
       excerpt: It's easy to start writing with Foam.
       cta: Let's do it
       url: 'https://foambubble.github.io/foam'
-    - title: See Foam on GitHub
-      excerpt: Foam is an open source project.
-      cta: Go to the repo
-      url: 'https://github.com/foambubble/foam'
 ---
 
 <!-- Foam is a personal knowledge management and sharing system built on Visual Studio Code and GitHub. -->
