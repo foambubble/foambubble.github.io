@@ -1,11 +1,11 @@
-{% if jekyll.environment == "production" %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5S1NKGG95"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+</script>
+{% if jekyll.environment == "production" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B5S1NKGG95"></script>
+<script>
   gtag('js', new Date());
-
   gtag('config', 'G-B5S1NKGG95');
 </script>
 {% endif %}
