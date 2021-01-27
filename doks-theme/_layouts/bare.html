@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include site-head.html %}
+	</head>
+	<body class="{{ site.doks.color_theme }}">
+		{% if page.include_header %}
+			{% include site-header.html %}
+		{% endif %}
+		<div class="section section--darker-theme-color-bg">
+			<div class="container">
+				{{ content }}
+			</div>
+		</div>
+		{% include site-footer.html %}
+	</body>
+</html>
