@@ -2,6 +2,9 @@
 <html lang="en-US">
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ page.goto }}">
+  <script>location="{{ page.goto }}"</script>
+  <meta http-equiv="refresh" content="0; url={{ page.goto }}">
   <meta name="robots" content="noindex">
   <style>
     html {
@@ -32,27 +35,12 @@
     }
   </style>
   <h1>Redirecting</h1>
-  <a href="{{ page.redirect.to }}">Click here if you are not redirected</a>
+  <a href="{{ page.goto }}">Click here if you are not redirected</a>
   <p id='dots'></p>
 
-  {{ content }}
-
-  {% include google-analytics.html %}
+  hello
 
   <script>
-    const codes = { d: 'discord', t: 'twitter', g: 'github', w: 'website', e: 'extension'};
-    const tokens = window.location.pathname.split('/').filter(Boolean);
-    const code = tokens.pop();
-    const name = tokens.pop();
-    gtag('event', name || 'internal-redirect', {
-      'source': codes[code] || window.location.pathname
-    });
-    gtag(function() {
-      window.location.replace("{{ page.redirect.to }}")
-    });
-    setTimeout(function() {
-      window.location.replace("{{ page.redirect.to }}");
-    }, 2000);
     setInterval(function() {
       document.getElementById('dots').textContent += '.';
     }, 600);
